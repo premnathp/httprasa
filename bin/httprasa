@@ -1,0 +1,17 @@
+#!/usr/bin/env ruby
+
+require_relative '../lib/httprasa'
+
+def main
+  begin
+    exit_status = Httprasa::Core.main
+  rescue Interrupt
+    exit_status = Httprasa::ExitStatus::ERROR_CTRL_C
+  end
+
+  exit_status.value
+end
+
+if __FILE__ == $PROGRAM_NAME
+  exit main
+end
