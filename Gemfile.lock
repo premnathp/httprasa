@@ -1,7 +1,18 @@
 GEM
   remote: https://rubygems.org/
   specs:
+    bigdecimal (3.1.8)
+    charlock_holmes (0.7.9)
+    climate_control (0.2.0)
+    csv (3.2.8)
     diff-lcs (1.5.1)
+    httparty (0.21.0)
+      mini_mime (>= 1.0.0)
+      multi_xml (>= 0.5.2)
+    mini_mime (1.1.5)
+    multi_xml (0.7.1)
+      bigdecimal (~> 3.1)
+    ostruct (0.5.5)
     rspec (3.13.0)
       rspec-core (~> 3.13.0)
       rspec-expectations (~> 3.13.0)
@@ -21,6 +32,11 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
+  charlock_holmes (~> 0.7.6)
+  climate_control (~> 0.2.0)
+  csv (~> 3.2.1)
+  httparty (~> 0.21.0)
+  ostruct (~> 0.5.0)
   rspec (~> 3.10)
 
 BUNDLED WITH

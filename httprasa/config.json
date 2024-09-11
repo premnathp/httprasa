@@ -1,0 +1,8 @@
+{
+  "default_options": [
+    "--form"
+  ],
+  "__meta__": {
+    "httprasa": "0.1.0"
+  }
+}
